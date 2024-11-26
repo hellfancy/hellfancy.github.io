@@ -26,27 +26,27 @@
 <meta property="og:site_name">
 <meta property="og:description" content="写在前面 本期更新一期nonebot机器人搭建指南，本期更新使用nonebot机器人搭建一个带有gpt3.5的qq机器人可以用于个人或群聊使用，主要使用别人开发的插件。本地Windows或者Linux服务器均可  nonebot概览nonebot官网 https:&#x2F;&#x2F;nonebot.dev&#x2F; ，默认来说我们使用最新的v2版本感兴趣可以看看官网的介绍，nonebot 简单来说是一个跨平台的 Pyth">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/f97c6f08cee006a9c95e703edde28f5c.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/74793e14d0941fe33d0b5a9f408ec73d.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/e534d382abf4a3bd199b1f2e42d148b4.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/baaacdb4a9c3655c1994bc377de56423.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/1757a7fbe039a36b8fa1cef365053273.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/9cd9aea16d73acf018a7f3d8b63f0735.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/b28b7f0e32a1b898111bb690ad959ce4.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/2fd3b0b86a1e43fabe791695e8dcef45.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/57d1e5f3c043dee52d62f9ae4d8fb62d.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/d4e4c52c6c0721bde08dd324506f6a2c.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/62e89c13807206d1f77e0293e8649188.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/85904cd49451ed5d1af9047caf5ed14c.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/435dcd5ca18e21e87fd5d91cfafaff3a.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/c0f3fc49dbbfa57b8cb493d19e0bd48c.png">
-<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/d1866a164047ec0609c7dad75e86de28.jpeg">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/project_choose.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/drive_choose.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/adapter_choose.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/create_venv.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/inner_plugins.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/run_project.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/into_store.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/into_plugin.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/install_gocq.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/successd_test.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/setting_gocq.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/add_user.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/login.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/add_plugin.png">
+<meta property="og:image" content="http://example.com/source/_figures/Bot-build-guide/res_show.jpeg">
 <meta property="article:published_time" content="2023-10-12T05:38:53.000Z">
-<meta property="article:modified_time" content="2024-11-26T09:36:03.675Z">
+<meta property="article:modified_time" content="2024-11-26T11:49:05.101Z">
 <meta property="article:author" content="hell">
 <meta property="article:tag" content="bot">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://i-blog.csdnimg.cn/blog_migrate/f97c6f08cee006a9c95e703edde28f5c.png">
+<meta name="twitter:image" content="http://example.com/source/_figures/Bot-build-guide/project_choose.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -311,39 +311,39 @@
 <p>请注意，<strong>多选项使用上下左右键选择，空格选中或取消，回车确认。或者使用鼠标左键选中或取消</strong></p>
 <p>这一指令将会执行创建项目的流程，你将会看到一些询问：</p>
 <p>1.项目模板	<br>这里我们选择 bootstrap 模板，它是一个简单的项目模板，能够安装商店插件。如果你需要自行编写插件，这里请选择 simple 模板。</p>
-<p><img src="https://i-blog.csdnimg.cn/blog_migrate/f97c6f08cee006a9c95e703edde28f5c.png" srcset="/img/loading.gif" lazyload alt="项目模板选择"></p>
+<p><img src="/source/_figures/Bot-build-guide/project_choose.png" srcset="/img/loading.gif" lazyload alt="项目模板选择"></p>
 <p>2.项目名称<br>项目名称: abot<br>这里我们以 abot 为例，作为项目名称。你可以根据自己的需要来命名。</p>
 <p>3.驱动器<br>驱动器使用FastAPI驱动器<br>要使用哪些驱动器?  仅使用 FastAPI (FastAPI 驱动器)</p>
-<p><img src="https://i-blog.csdnimg.cn/blog_migrate/74793e14d0941fe33d0b5a9f408ec73d.png" srcset="/img/loading.gif" lazyload alt="安装驱动"></p>
+<p><img src="/source/_figures/Bot-build-guide/drive_choose.png" srcset="/img/loading.gif" lazyload alt="安装驱动"></p>
 <p>4.适配器<br>要使用哪些适配器 ？仅使用 OneBot V11 (OneBot V11 协议)</p>
-<p><img src="https://i-blog.csdnimg.cn/blog_migrate/e534d382abf4a3bd199b1f2e42d148b4.png" srcset="/img/loading.gif" lazyload alt="安装适配器"></p>
+<p><img src="/source/_figures/Bot-build-guide/adapter_choose.png" srcset="/img/loading.gif" lazyload alt="安装适配器"></p>
 <p>是否立即安装依赖？是，输入Y<br>是否创建虚拟环境？是，输入Y</p>
-<p><img src="https://i-blog.csdnimg.cn/blog_migrate/baaacdb4a9c3655c1994bc377de56423.png" srcset="/img/loading.gif" lazyload alt="安装虚拟环境"></p>
+<p><img src="/source/_figures/Bot-build-guide/create_venv.png" srcset="/img/loading.gif" lazyload alt="安装虚拟环境"></p>
 <p>这里我们选择了创建虚拟环境，<code>nb-cli</code> 在之后的操作中将会自动使用这个虚拟环境。如果你不需要自动创建虚拟环境或者已经创建了其他虚拟环境，<code>nb-cli</code> 将会安装依赖至当前激活的 Python 虚拟环境。</p>
 <p>5.选择内置插件<br>要使用哪些内置插件？ 使用 echo 插件<br>这里我们选择 echo 插件作为示例。这是一个简单的复读回显插件，可以用于测试你的机器人是否正常运行。</p>
-<p><img src="https://i-blog.csdnimg.cn/blog_migrate/1757a7fbe039a36b8fa1cef365053273.png" srcset="/img/loading.gif" lazyload alt="使用插件"></p>
+<p><img src="/source/_figures/Bot-build-guide/inner_plugins.png" srcset="/img/loading.gif" lazyload alt="使用插件"></p>
 <p>6.运行项目<br>在项目创建完成后，你可以根据控制台提示，在项目目录中使用以下命令来运行项目：</p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs applescript">cd abot<br>nb <span class="hljs-built_in">run</span> <span class="hljs-comment">--reload</span><br></code></pre></td></tr></table></figure>
 <p>看到下面情况代表成功</p>
-<p><img src="https://i-blog.csdnimg.cn/blog_migrate/9cd9aea16d73acf018a7f3d8b63f0735.png" srcset="/img/loading.gif" lazyload alt="运行项目"><br>你现在应该已经运行起来了你的第一个 NoneBot 项目了！请注意，生成的项目中使用了 FastAPI 驱动器和 OneBot V1 适配器，你之后可以自行修改配置或安装其他适配器。<br>我们先 <code>Ctrl</code>+<code>C</code> 退出</p>
-<h2 id="gocq插件安装"><a href="#gocq插件安装" class="headerlink" title="gocq插件安装"></a>gocq插件安装</h2><p>首先在nonebot2的官网中的导航栏找到商店<br><img src="https://i-blog.csdnimg.cn/blog_migrate/b28b7f0e32a1b898111bb690ad959ce4.png" srcset="/img/loading.gif" lazyload alt="安装gocq"></p>
-<h3 id="安装gocq插件"><a href="#安装gocq插件" class="headerlink" title="安装gocq插件"></a>安装gocq插件</h3><p>插件中我们展示只安装gocq，用于登录测试<br><img src="https://i-blog.csdnimg.cn/blog_migrate/2fd3b0b86a1e43fabe791695e8dcef45.png" srcset="/img/loading.gif" lazyload alt="安装gocq"><br>安装 gocq 启动器插件<br>在 power shell 中粘贴安装命令</p>
+<p><img src="/source/_figures/Bot-build-guide/run_project.png" srcset="/img/loading.gif" lazyload alt="运行项目"><br>你现在应该已经运行起来了你的第一个 NoneBot 项目了！请注意，生成的项目中使用了 FastAPI 驱动器和 OneBot V1 适配器，你之后可以自行修改配置或安装其他适配器。<br>我们先 <code>Ctrl</code>+<code>C</code> 退出</p>
+<h2 id="gocq插件安装"><a href="#gocq插件安装" class="headerlink" title="gocq插件安装"></a>gocq插件安装</h2><p>首先在nonebot2的官网中的导航栏找到商店<br><img src="/source/_figures/Bot-build-guide/into_store.png" srcset="/img/loading.gif" lazyload alt="安装gocq"></p>
+<h3 id="安装gocq插件"><a href="#安装gocq插件" class="headerlink" title="安装gocq插件"></a>安装gocq插件</h3><p>插件中我们展示只安装gocq，用于登录测试<br><img src="/source/_figures/Bot-build-guide/into_plugin.png" srcset="/img/loading.gif" lazyload alt="安装gocq"><br>安装 gocq 启动器插件<br>在 power shell 中粘贴安装命令</p>
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stata">nb <span class="hljs-keyword">plugin</span> install nonebot-<span class="hljs-keyword">plugin</span>-gocqhttp<br></code></pre></td></tr></table></figure>
-<p><img src="https://i-blog.csdnimg.cn/blog_migrate/57d1e5f3c043dee52d62f9ae4d8fb62d.png" srcset="/img/loading.gif" lazyload alt="安装gocq"></p>
+<p><img src="/source/_figures/Bot-build-guide/install_gocq.png" srcset="/img/loading.gif" lazyload alt="安装gocq"></p>
 <p>等待安装完成即可</p>
 <h3 id="配置相关文件"><a href="#配置相关文件" class="headerlink" title="配置相关文件"></a>配置相关文件</h3><p>安装完相关配置后，需要修改目录下 <code>abot/</code>下配置文件<br>在<code>.env.prod</code>文件中，使用如下的配置</p>
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">DRIVER</span>=~fastapi <span class="hljs-comment"># 使用fastapi驱动器</span><br><span class="hljs-attr">HOST</span>=<span class="hljs-number">0.0</span>.<span class="hljs-number">0.0</span> <span class="hljs-comment"># 配置 NoneBot2 监听的 IP/主机名</span><br><span class="hljs-attr">PORT</span>=<span class="hljs-number">11111</span> <span class="hljs-comment"># 配置 NoneBot2 监听的端口</span><br></code></pre></td></tr></table></figure>
 
 <h3 id="测试gocq插件安装以及配置qq"><a href="#测试gocq插件安装以及配置qq" class="headerlink" title="测试gocq插件安装以及配置qq"></a>测试gocq插件安装以及配置qq</h3><p>我们使用<code>nb run</code>命令启动机器人</p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">nb <span class="hljs-built_in">run</span><br></code></pre></td></tr></table></figure>
-<p>出现下面界面算成功<br><img src="https://i-blog.csdnimg.cn/blog_migrate/d4e4c52c6c0721bde08dd324506f6a2c.png" srcset="/img/loading.gif" lazyload alt="出现该图配置算成功"><br>在浏览器中输入<br><code>http://127.0.0.1:11111/go-cqhttp/#/</code>可以看到我们成功地配置了gocq<br><img src="https://i-blog.csdnimg.cn/blog_migrate/62e89c13807206d1f77e0293e8649188.png" srcset="/img/loading.gif" lazyload alt="gocq配置成功"><br>然后我们添加机器人账号，不要输入密码，不要输入密码，不要输入密码，后面使用二维码登录！！！<br><img src="https://i-blog.csdnimg.cn/blog_migrate/85904cd49451ed5d1af9047caf5ed14c.png" srcset="/img/loading.gif" lazyload alt="添加账号并启动"><br>点击启动<br><img src="https://i-blog.csdnimg.cn/blog_migrate/435dcd5ca18e21e87fd5d91cfafaff3a.png" srcset="/img/loading.gif" lazyload alt="二维码登录"><br>然后扫描二维码登录qq，成功登录代表成功，否则查看网页中得到进程日志，可能需要使用手机热点登录。</p>
-<h2 id="GPT插件安装及运行"><a href="#GPT插件安装及运行" class="headerlink" title="GPT插件安装及运行"></a>GPT插件安装及运行</h2><p>上面就完成了机器人整体的搭建过程。下面我们进行核心插件安装，实现真正的GPTqq机器人的功能。由于本人不是插件开发者，也不是社区贡献者，感兴趣的朋友希望帮帮插件开发者的GitHub点点star哈哈哈。下面开始。<br>在Nonebot官网中打开商店，搜索GPT3，第一个插件就是我们需要的插件<br><img src="https://i-blog.csdnimg.cn/blog_migrate/c0f3fc49dbbfa57b8cb493d19e0bd48c.png" srcset="/img/loading.gif" lazyload alt="安装插件"><br>我们点击命令，用 powershell 在 <code>/abot</code> 目录下安装。</p>
+<p>出现下面界面算成功<br><img src="/source/_figures/Bot-build-guide/successd_test.png" srcset="/img/loading.gif" lazyload alt="出现该图配置算成功"><br>在浏览器中输入<br><code>http://127.0.0.1:11111/go-cqhttp/#/</code>可以看到我们成功地配置了gocq<br><img src="/source/_figures/Bot-build-guide/setting_gocq.png" srcset="/img/loading.gif" lazyload alt="gocq配置成功"><br>然后我们添加机器人账号，不要输入密码，不要输入密码，不要输入密码，后面使用二维码登录！！！<br><img src="/source/_figures/Bot-build-guide/add_user.png" srcset="/img/loading.gif" lazyload alt="添加账号并启动"><br>点击启动<br><img src="/source/_figures/Bot-build-guide/login.png" srcset="/img/loading.gif" lazyload alt="二维码登录"><br>然后扫描二维码登录qq，成功登录代表成功，否则查看网页中得到进程日志，可能需要使用手机热点登录。</p>
+<h2 id="GPT插件安装及运行"><a href="#GPT插件安装及运行" class="headerlink" title="GPT插件安装及运行"></a>GPT插件安装及运行</h2><p>上面就完成了机器人整体的搭建过程。下面我们进行核心插件安装，实现真正的GPTqq机器人的功能。由于本人不是插件开发者，也不是社区贡献者，感兴趣的朋友希望帮帮插件开发者的GitHub点点star哈哈哈。下面开始。<br>在Nonebot官网中打开商店，搜索GPT3，第一个插件就是我们需要的插件<br><img src="/source/_figures/Bot-build-guide/add_plugin.png" srcset="/img/loading.gif" lazyload alt="安装插件"><br>我们点击命令，用 powershell 在 <code>/abot</code> 目录下安装。</p>
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stata">nb <span class="hljs-keyword">plugin</span> install nonebot-<span class="hljs-keyword">plugin</span>-gpt3<br></code></pre></td></tr></table></figure>
 <p>等待安装完成即可</p>
 <h3 id="配置文件相关"><a href="#配置文件相关" class="headerlink" title="配置文件相关"></a>配置文件相关</h3><p>安装成功后我们需要完成一些文件配置，打开 <code>.env</code>文件<br>作者GitHub中需要如下的配置</p>
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">gpt3_command_prefix</span> = <span class="hljs-string">&quot;.&quot;</span>                          <span class="hljs-comment"># 基本会话中的指令前缀</span><br><span class="hljs-attr">openai_api_key</span> = <span class="hljs-string">&quot;xxx&quot;</span>                             <span class="hljs-comment"># API密钥</span><br><br><span class="hljs-comment"># 默认人格</span><br><span class="hljs-attr">gpt3_default_preset</span> = <span class="hljs-string">&quot;以下是与一个叫鸡哥的篮球高手的对话。你叫鸡哥，是一个唱跳rap篮球的高手，并且每句话后会带上厉不厉害你鸡哥!&quot;</span><br><span class="hljs-attr">gpt3_proxy</span> = <span class="hljs-string">&quot;http://127.0.0.1:7890&quot;</span>               <span class="hljs-comment"># 代理地址</span><br><span class="hljs-attr">gpt3_need_at</span> = <span class="hljs-literal">False</span>                               <span class="hljs-comment"># 是否需要@才触发命令</span><br><span class="hljs-attr">gpt3_image_render</span> = <span class="hljs-literal">False</span>                          <span class="hljs-comment"># 是否渲染为图片</span><br><span class="hljs-attr">gpt3_image_limit</span> = <span class="hljs-number">150</span>                             <span class="hljs-comment"># 长度超过多少才会渲染成图片</span><br><span class="hljs-attr">gpt3_max_tokens</span> = <span class="hljs-number">1000</span>                             <span class="hljs-comment"># 回答内容最大长度</span><br><span class="hljs-attr">gpt3_chat_count_per_day</span> = <span class="hljs-number">150</span>                      <span class="hljs-comment"># 普通用户每天聊天次数上限</span><br><span class="hljs-attr">gpt3_model</span> = <span class="hljs-string">&#x27;gpt-3.5-turbo&#x27;</span>                       <span class="hljs-comment"># 语言模型</span><br></code></pre></td></tr></table></figure>
 <p>根据自身要求，追加填写在 <code>.env.prod</code>文件里<br>最后我们使用<code>nb run</code>运行，根据配置文件的设置可以在qq中进行对话。</p>
-<h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><p><img src="https://i-blog.csdnimg.cn/blog_migrate/d1866a164047ec0609c7dad75e86de28.jpeg" srcset="/img/loading.gif" lazyload alt="效果展示"></p>
+<h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><p><img src="/source/_figures/Bot-build-guide/res_show.jpeg" srcset="/img/loading.gif" lazyload alt="效果展示"></p>
 <h2 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h2><p>本期内容到此结束，本人只是插件的使用者，并非作者，今后仍需要不断学习，开发属于自己的插件，今后若有时间，会更新插件开发教程。当然，商店中也有许多其他插件，比如表情包制作，点歌，今日人品等等。感兴趣自行安装，遇到问题也可以问我。感谢观看，最后感谢gocq作者和插件gpt3的作者！</p>
 
                 
